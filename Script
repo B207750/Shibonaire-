@@ -1,0 +1,11 @@
+let coins = 0;
+const coinCount = document.getElementById("coinCount");
+const mineBtn = document.getElementById("mineBtn");
+
+mineBtn.addEventListener("click", () => {
+  coins += 1;
+  coinCount.textContent = coins;
+});
+
+// Inisialisasi WebApp
+Telegram.WebApp.ready();
